@@ -20,7 +20,7 @@ class USSDAccessibilityService : AccessibilityService() {
         Log.d(TAG, "Text: $text")
 
         if (className?.contains("Dialog") == true && className?.contains("Activity") == false  && className?.contains("Progress") == false) {
-            performGlobalAction(GLOBAL_ACTION_BACK)
+//            performGlobalAction(GLOBAL_ACTION_BACK)
             Log.d(TAG, "Dialog Text: $text")
             sendUSSDRefreshBroadcast(text)
         }
